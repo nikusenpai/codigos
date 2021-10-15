@@ -1,0 +1,275 @@
+from PIL import Image
+import time
+img = Image.open("./lore/SCP - 5287.jpg")
+img.show()
+
+def evento_bueno():
+    time.sleep(2)
+    R = open("./lore/mensaje_2.txt")
+    leer = R.read()
+    print(leer)
+    R.close
+
+def evento_malo():
+    time.sleep(2)
+    R = open("./lore/mensaje.txt")
+    leer = R.read()
+    print(leer)
+    R.close
+
+def pregunta_1():
+    R = open("./lore/1.txt")
+    leer = R.read()
+    print(leer)
+    R.close()
+    respuesta = input("  ")
+    if respuesta == "amazonas":
+        time.sleep(2)
+        print ("correct!")
+        evento_bueno()
+        time.sleep(5)
+        pregunta_2()
+    else:
+        time.sleep(2)
+        print ("incorrect!")
+        evento_malo()
+
+def pregunta_2():
+    R = open("./lore/2.txt")
+    leer = R.read()
+    print(leer)
+    R.close
+    time.sleep(2)
+    respuesta = input("  ")
+    if respuesta == "china":
+        time.sleep(2)
+        print ("correct!")
+        evento_bueno()
+        time.sleep(5)
+        pregunta_3()
+    else:
+        time.sleep(2)
+        print ("incorrect!")
+        evento_malo()
+def pregunta_3():
+    R = open("./lore/3.txt")
+    leer = R.read()
+    print(leer)
+    R.close
+    time.sleep(2)
+    respuesta = input("  ")
+    if respuesta == "burj":
+        time.sleep(2)
+        print ("correct!")
+        evento_bueno()
+        time.sleep(5)
+        pregunta_4()
+    else:
+        time.sleep(2)
+        print ("incorrect!")
+        evento_malo()
+def pregunta_4():
+    R = open("./lore/4.txt")
+    leer = R.read()
+    print(leer)
+    R.close
+    time.sleep(2)
+    respuesta = input("  ")
+    if respuesta == "1945":
+        time.sleep(2)
+        print ("correct!")
+        evento_bueno()
+        time.sleep(5)
+        pregunta_5()
+    else:
+        time.sleep(2)
+        print ("incorrect!")
+        evento_malo()
+def pregunta_5():
+    R = open("./lore/5.txt")
+    leer = R.read()
+    print(leer)
+    R.close
+    time.sleep(2)
+    respuesta = input("  ")
+    if respuesta == "1945":
+        time.sleep(2)
+        print ("correct!")
+        evento_bueno()
+        time.sleep(5)
+        pregunta_6()
+    else:
+        time.sleep(2)
+        print ("incorrect!")
+        evento_malo()
+def pregunta_6():
+    R = open("./lore/6.txt")
+    leer = R.read()
+    print(leer)
+    R.close
+    time.sleep(2)
+    respuesta = input("  ")
+    if respuesta == "19":
+        time.sleep(2)
+        print ("correct!")
+        evento_bueno()
+        time.sleep(5)
+        pregunta_7()
+    else:
+        time.sleep(2)
+        print ("incorrect!")
+        evento_malo()
+
+def pregunta_7():
+    R = open("./lore/7.txt")
+    leer = R.read()
+    print(leer)
+    R.close
+    time.sleep(2)
+    respuesta = input("  ")
+    if respuesta == "5287":
+        time.sleep(2)
+        print ("correct!")
+        evento_bueno()
+        time.sleep(5)
+        pregunta_8()
+    else:
+        time.sleep(2)
+        print ("incorrect!")
+        evento_malo()
+    
+def pregunta_8(): 
+    R = open("./lore/8.txt")
+    leer = R.read()
+    print(leer)
+    R.close
+    time.sleep(2)
+    respuesta = input("  ")
+    if respuesta == "1989":
+        time.sleep(2)
+        print ("correct!")
+        evento_bueno()
+        time.sleep(5)
+        pregunta_9()
+    else:
+        time.sleep(2)
+        print ("incorrect!")
+        evento_malo()
+
+def pregunta_9():
+    R = open("./lore/9.txt")
+    leer = R.read()
+    print(leer)
+    R.close
+    time.sleep(2)
+    respuesta = input("SCP - ")
+    if respuesta == "096":
+        time.sleep(2)
+        print ("correct!")
+        evento_bueno()
+        time.sleep(5)
+        pregunta_10()
+    else:
+        time.sleep(2)
+        print ("incorrect!")
+        evento_malo()
+
+def pregunta_10():
+    R = open("./lore/10.txt")
+    leer = R.read()
+    print(leer)
+    R.close
+    time.sleep(2)
+    respuesta = input("SCP - ")
+    if respuesta == "682":
+        time.sleep(2)
+        print ("correct!")
+        evento_bueno()
+        time.sleep(5)
+        pregunta_11()
+    else:
+        time.sleep(2)
+        print ("incorrect!")
+        evento_malo()
+
+def pregunta_11():
+    R = open("./lore/11.txt")
+    leer = R.read()
+    print(leer)
+    R.close
+    time.sleep(2)
+    respuesta = input("  ")
+    if respuesta == "coconut":
+        time.sleep(2)
+        print ("correct!")
+        evento_bueno()
+        time.sleep(5)
+        pregunta_12()
+    else:
+        time.sleep(2)
+        print ("incorrect!")
+        evento_malo()
+
+def pregunta_12():
+    R = open("./lore/12.txt")
+    leer = R.read()
+    print(leer)
+    R.close
+    time.sleep(2)
+    respuesta = input("  ")
+    if respuesta == "si":
+        time.sleep(2)
+        print ("correct!")
+        evento_bueno()
+    elif respuesta == "no":
+        time.sleep(2)
+        print ("correct!")
+        time.sleep(2)
+        print ("""
+        bocina: *estatica* bien hecho clase D
+        
+        *estatica*
+
+        retirate de la camara dontencion de 5287
+
+        *estatica*
+
+        ya has terminado por hoy
+        """)
+        time.sleep(2)
+        print ("""
+        bocina:
+        preparar al clase D para la camara de contencion de SCP - 173 
+        """)
+
+    else:
+        time.sleep(2)
+        print ("incorrect!")
+        evento_malo()
+def main(): 
+    time.sleep(2)
+    xd = input ("activar al SCP - 5287? SI/NO    ")
+    time.sleep(2)
+    if xd == "si":
+        print("-- ACTIVANDO A SCP - 5287 --")
+        time.sleep(4)
+        print ("""Bocina:
+        atencion!
+        atencion!
+
+        el SCP - 5287
+        a sido activado por un clase D
+        """)
+        time.sleep(2)
+        pregunta_1()
+    elif xd == "no":
+        print("""bocina:
+        hiciste bien al no activarlo
+        
+        
+        atencion a seguridad
+
+        escolten al clase D a su selda para su siguiente tarea de mantenimiento con el SCP - 173
+        """)
+        time.sleep(2)
+main()
