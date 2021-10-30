@@ -1,0 +1,51 @@
+import time
+print ("bienvenido al sistema de calificaciones de la UAD")
+def promedio():
+    nombre = input ("inserte el nombre del estudiante: ")
+    cal1 = int(input ("cual fue la calificacion del primer parcial?: "))
+    cal2 = int(input ("cual fue la calificacion del segundo parcial?: "))
+    cal3 = int(input ("cual fue la calificacion del tercer parcial?: "))
+    cal4 = int(input ("cual fue la calificacion del cuarto parcial?: "))
+    suma = cal1 + cal2 + cal3 + cal4
+    division = suma / 4
+    print ("la calificacion final de ",nombre," es ",division)
+def cal():
+    maestro = input ("por favor, inserte su nombre: ")
+    autorizados = ["Luis", "Vianey", "Irving", "Diego"]
+    calificaciones = ["Yess = 9.0", "Mike = 10.0", "Isaias = 9.0","Manolo = 8.7","Moi = 9.5","Dani = 9.8","Paul = 10","kai = 9.0" ]
+    if maestro in autorizados:
+        print ("espere un momento en lo que carga")
+        time.sleep(5)
+        print (calificaciones)
+    elif maestro not in autorizados:
+        print ("no tiene permiso para ingresar a estos archivos")
+def par():
+    alumno = input ("por favor, inserte el nombre del estudiante: ")
+    cal1 = int(input("calificaicon del primer trabajo: "))
+    cal2 = int(input("calificaicon del segundo trabajo: "))
+    cal3 = int(input("calificaicon del tercero trabajo: "))
+    cal4 = int(input("calificaicon del cuarto trabajo: "))
+    cal5 = int(input("calificaicon del quinto trabajo: "))
+    cal6 = int(input("calificaicon del sexto trabajo: "))
+    suma = cal1 + cal2 + cal3 + cal4 + cal5 + cal6
+    division = suma / 6
+    time.sleep(5)
+    print ("la calificacion de ",alumno," en este parcial es: ",division)
+while True:
+    menu = input("""
+    1.- consultar calificaciones
+    2.- sacar calificaciones del parcial
+    3.- sacar calificaciones finales
+    4.- salir del programa  
+    """)
+    if menu == "1":
+        cal()
+    elif menu == "2":
+        par()
+    elif menu == "3":
+        promedio()
+    elif menu == "4":
+        break
+    else:
+        print ("opcion no valida")
+        
