@@ -1,0 +1,28 @@
+respuesta = "s"
+lista = []
+A = 10
+B = 0
+C = 0
+
+while respuesta == "s":
+    numero = int(input("inserte un numero 1/50: "))
+    print("")
+    if numero > 50 or numero < 1:
+        print("opcion no valida")
+    else:
+        lista.append(numero)
+    respuesta = input("quieres agregar otro numero? s/n: ")
+
+lista = sorted(lista)
+
+for i in range(len(lista)):
+    while lista[i] > A:
+        A += 10
+        C += 10
+    if C <= lista[i] and lista[i] <= A:
+        print(lista[i], end=" ")
+        B += 1
+    if B == 3:
+        B = 0
+        A += 10
+        C += 10
