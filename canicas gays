@@ -1,0 +1,22 @@
+from time import sleep
+canicas = 21
+loop = 0
+while loop != 1:
+    print ("cuantas canicas del 1 al 3 lanzaras?")
+    choice = int(input(">>> "))
+    if choice < 4 and choice > 0:
+        canicas = canicas - choice 
+        print ('escojiste', choice, " canicas, te quedan ", canicas, 'canicas')
+        if canicas > 0:
+            compchoice = 4 - choice
+            print
+            sleep(1)
+            canicas = canicas - compchoice
+            print ('Tes turno de la pc ', compchoice, "canicas. ahora tiene", canicas, "canicas")
+            sleep(1)
+        else:
+            print ("no quedan canicas")
+            print ("perdiste joto")
+            loop = 1                
+    else:
+        print ('no puedes lanzar mas de 3 canicas')
