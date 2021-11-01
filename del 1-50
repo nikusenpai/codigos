@@ -3,7 +3,6 @@ lista = []
 A = 10
 B = 0
 C = 0
-
 while respuesta == "s":
     numero = int(input("inserte un numero 1/50: "))
     print("")
@@ -12,9 +11,7 @@ while respuesta == "s":
     else:
         lista.append(numero)
     respuesta = input("quieres agregar otro numero? s/n: ")
-
 lista = sorted(lista)
-
 for i in range(len(lista)):
     while lista[i] > A:
         A += 10
